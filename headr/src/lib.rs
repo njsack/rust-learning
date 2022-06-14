@@ -20,15 +20,15 @@ pub struct Config {
         .args(&["lines", "bytes"]),
 ))]
 pub struct Args {
-    // Number of lines
+    /// Number of lines to read
     #[clap(short = 'n', long, value_parser, default_value = "10", group = "opts")]
     lines: usize,
 
-    // Number of bytes
+    /// Number of bytes to read
     #[clap(short = 'c', long, value_parser, group = "opts")]
     bytes: Option<usize>,
 
-    // Input file(s)
+    /// Input file(s)
     #[clap(value_parser, default_value = "-")]
     files: Vec<String>,
 }

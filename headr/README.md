@@ -6,11 +6,11 @@ USAGE:
     headr [OPTIONS] [FILES]...
 
 ARGS:
-    <FILES>...    [default: -]
+    <FILES>...    Input file(s) [default: -]
 
 OPTIONS:
-    -c, --bytes <BYTES>    
+    -c, --bytes <BYTES>    Number of bytes to read
     -h, --help             Print help information
-    -n, --lines <LINES>    [default: 10]
+    -n, --lines <LINES>    Number of lines to read [default: 10]
     -V, --version          Print version information
 ```
